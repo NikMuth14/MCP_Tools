@@ -1,0 +1,107 @@
+
+────────────────────────────────────────────────────────────
+Target Mapping Document for AE Domain
+────────────────────────────────────────────────────────────
+Document Version: 1.0
+Date: [Insert Date]
+Author: [Your Name or Team]
+Reference: Study Data Tabulation Model – Human Clinical Trials Implementation Guide (v3.4 Final)
+
+Purpose:
+This document provides the target mapping for the AE (Adverse Events) domain. It maps each source variable from the provided list to the corresponding target variable that conforms to the SDTM standard. In this example the mapping is a one‐to‐one copy; if any transformation, derivation, or consolidation is required, please add appropriate comments in the “Comments/Transformation” column.
+
+────────────────────────────────────────────────────────────
+Mapping Table
+────────────────────────────────────────────────────────────
+┌───────────────────────────────┬───────────────────────────────┬────────────────────────────────────────────┐
+│ Source Variable               │ Target Variable               │ Comments/Transformation                    │
+├───────────────────────────────┼───────────────────────────────┼────────────────────────────────────────────┤
+│ PROJECTID                     │ PROJECTID                     │ Identity mapping                           │
+│ PROJECT                       │ PROJECT                       │ Identity mapping                           │
+│ STUDYID                       │ STUDYID                       │ Identity mapping                           │
+│ ENVIRONMENTNAME               │ ENVIRONMENTNAME               │ Identity mapping                           │
+│ SUBJECTID                     │ SUBJECTID                     │ Identity mapping                           │
+│ STUDYSITEID                   │ STUDYSITEID                   │ Identity mapping                           │
+│ SUBJECT                       │ SUBJECT                       │ Identity mapping                           │
+│ SDVTIER                       │ SDVTIER                       │ Identity mapping                           │
+│ SITEID                        │ SITEID                        │ Identity mapping                           │
+│ SITE                          │ SITE                          │ Identity mapping                           │
+│ SITENUMBER                    │ SITENUMBER                    │ Identity mapping                           │
+│ SITEGROUP                     │ SITEGROUP                     │ Identity mapping                           │
+│ INSTANCEID                    │ INSTANCEID                    │ Identity mapping                           │
+│ INSTANCENAME                  │ INSTANCENAME                  │ Identity mapping                           │
+│ INSTANCEREPEATNUMBER          │ INSTANCEREPEATNUMBER          │ Identity mapping                           │
+│ FOLDERID                      │ FOLDERID                      │ Identity mapping                           │
+│ FOLDER                        │ FOLDER                        │ Identity mapping                           │
+│ FOLDERNAME                    │ FOLDERNAME                    │ Identity mapping                           │
+│ FOLDERSEQ                     │ FOLDERSEQ                     │ Identity mapping                           │
+│ TARGETDAYS                    │ TARGETDAYS                    │ Identity mapping                           │
+│ DATAPAGEID                    │ DATAPAGEID                    │ Identity mapping                           │
+│ DATAPAGENAME                  │ DATAPAGENAME                  │ Identity mapping                           │
+│ PAGEREPEATNUMBER              │ PAGEREPEATNUMBER              │ Identity mapping                           │
+│ RECORDDATE                    │ RECORDDATE                    │ Identity mapping                           │
+│ RECORDID                      │ RECORDID                      │ Identity mapping                           │
+│ RECORDPOSITION                │ RECORDPOSITION                │ Identity mapping                           │
+│ RECORDACTIVE                  │ RECORDACTIVE                  │ Identity mapping                           │
+│ MINCREATED                    │ MINCREATED                    │ Identity mapping                           │
+│ MAXUPDATED                    │ MAXUPDATED                    │ Identity mapping                           │
+│ SAVETS                        │ SAVETS                        │ Identity mapping                           │
+│ CODER_HIERARCHY               │ CODER_HIERARCHY               │ Identity mapping                           │
+│ STUDYENVSITENUMBER            │ STUDYENVSITENUMBER            │ Identity mapping                           │
+│ AETERM                        │ AETERM                        │ Identity mapping                           │
+│ AESTDTC                       │ AESTDTC                       │ May require formatting check (ISO 8601)     │
+│ AESTDTC_RAW                   │ AESTDTC_RAW                   │ Retain raw source value                    │
+│ AESTDTC_INT                   │ AESTDTC_INT                   │ Integer component extraction if needed     │
+│ AESTDTCY                      │ AESTDTCY                      │ Derived year component                     │
+│ AESTDTCM                      │ AESTDTCM                      │ Derived month component                    │
+│ AESTDTCD                      │ AESTDTCD                      │ Derived day component                      │
+│ AESTTIM                       │ AESTTIM                       │ Derived time component                     │
+│ AEENDTC                       │ AEENDTC                       │ May require formatting check (ISO 8601)     │
+│ AEENDTC_RAW                   │ AEENDTC_RAW                   │ Retain raw source value                    │
+│ AEENDTC_INT                   │ AEENDTC_INT                   │ Integer component extraction if needed     │
+│ AEENDTCY                      │ AEENDTCY                      │ Derived year component                     │
+│ AEENDTCM                      │ AEENDTCM                      │ Derived month component                    │
+│ AEENDTCD                      │ AEENDTCD                      │ Derived day component                      │
+│ AEENTIM                       │ AEENTIM                       │ Derived time component                     │
+│ AEPATT                        │ AEPATT                        │ Identity mapping                           │
+│ AEPATT_STD                    │ AEPATT_STD                    │ Standardized pattern mapping               │
+│ AESEV                         │ AESEV                         │ May require clinical review (e.g., grade)    │
+│ AESEV_STD                     │ AESEV_STD                     │ Standardized severity mapping              │
+│ AEREL                         │ AEREL                         │ Identity mapping                           │
+│ AEREL_STD                     │ AEREL_STD                     │ Standardized relationship mapping          │
+│ AERELPR                       │ AERELPR                       │ Identity mapping                           │
+│ AERELPR_STD                   │ AERELPR_STD                   │ Standardized relationship mapping          │
+│ AEACN_1                       │ AEACN_1                     │ Identity mapping                           │
+│ AEACN_1_STD                   │ AEACN_1_STD                   │ Standardized action mapping                │
+│ AEOUT                         │ AEOUT                         │ Identity mapping                           │
+│ AEOUT_STD                     │ AEOUT_STD                     │ Standardized outcome mapping               │
+│ AESER                         │ AESER                         │ Identity mapping                           │
+│ AESER_STD                     │ AESER_STD                     │ Standardized seriousness mapping           │
+│ AECONTRT                      │ AECONTRT                      │ Identity mapping                           │
+│ AECONTRT_STD                  │ AECONTRT_STD                  │ Standardized treatment mapping             │
+│ AESTDF                        │ AESTDF                        │ Identity mapping                           │
+│ AESTDF_RAW                    │ AESTDF_RAW                    │ Retain raw source value                    │
+│ AESTDF_INT                    │ AESTDF_INT                    │ Integer component extraction if needed     │
+│ AESTDFY                       │ AESTDFY                       │ Derived year component                     │
+│ AESTDFM                       │ AESTDFM                       │ Derived month component                    │
+│ AESTDFD                       │ AESTDFD                       │ Derived day component                      │
+│ USERID                        │ USERID                        │ Identity mapping                           │
+│ AEREL1                        │ AEREL1                        │ Identity mapping                           │
+│ AEREL1_STD                    │ AEREL1_STD                    │ Standardized relationship mapping          │
+│ AEACN_1_                      │ AEACN_1_                      │ Identity mapping                           │
+│ AEACN_1__STD                  │ AEACN_1__STD                  │ Standardized action mapping                │
+│ AEACN_3_                      │ AEACN_3_                      │ Identity mapping                           │
+└───────────────────────────────┴───────────────────────────────┴────────────────────────────────────────────┘
+
+────────────────────────────────────────────────────────────
+Notes:
+1. For variables with date/time components (e.g., AESTDTC, AEENDTC), verify that the target format conforms to ISO 8601 as required by SDTM.
+2. Any variable ending with “_RAW” is assumed to carry the unmodified value from source.
+3. Variables with “_STD” represent standardized or controlled terminology values; please confirm that appropriate standardization procedures are applied.
+4. Where transformation logic is needed (e.g., splitting a full date-time into components), implement the necessary data processing steps as part of your ETL process.
+5. If any variable does not have a direct one-to-one mapping or requires further derivation, please update the Comments/Transformation column accordingly.
+
+────────────────────────────────────────────────────────────
+Storage and Version Control:
+• Save this document as “AE_Domain_TargetMapping_v1.0.docx” (or the preferred format).
+• Maintain version control for future revisions as mapping rules evolve.

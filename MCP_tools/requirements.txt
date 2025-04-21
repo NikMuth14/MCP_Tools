@@ -1,0 +1,5 @@
+openai==0.28
+pymupdf
+numpy
+faiss-cpu
+python-dotenv
